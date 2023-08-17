@@ -23,11 +23,12 @@ This test is designed to allow the candidate to demonstrate their familiarity wi
         - CREATE ACTION: Call endpoint https://o59ee.wiremockapi.cloud/notifications/action passing body: `{ "id": ${notification id}, "action": "TODO" }`
         - DELETE: Call endpoint https://o59ee.wiremockapi.cloud/notifications/delete passing body: `{ "id": ${notification id} }`
 ### Screen references:
-![FrontendTestHome.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cd7f1eef-baa4-4045-96ee-75433724a915/FrontendTestHome.png)
+| Description | Image |
+|-------------|-------|
+| Home screen | <img width="403" alt="FrontendTestHome" src="https://github.com/asknicely/frontend-test-vue/assets/133603331/c755497b-e089-4da6-8666-8d9d2ede2694">|
+| Scroll demo | <img width="403" alt="FrontendTestGif" src="https://github.com/asknicely/frontend-test-vue/assets/133603331/43228391-9e61-4278-a7c0-b8b51d482048">|
+| Details screen |<img width="403" alt="FrontendTestDetails" src="https://github.com/asknicely/frontend-test-vue/assets/133603331/ffff13c8-77af-4618-90ab-8b15d7bd2f6d">|
 
-![FrontendTestGif.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/efa312d1-a5c5-43b8-9799-15e615d45518/FrontendTestGif.gif)
-
-![FrontendTestDetails.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6ba85fab-078b-4b3e-a5de-6949735d29d7/FrontendTestDetails.png)
 
 ### Color references:
 - Background gradient: `#6b097a` to `#274bdb`
