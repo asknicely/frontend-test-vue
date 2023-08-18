@@ -2,7 +2,7 @@
   --gradient-start-color: #6b097a;
   --gradient-end-color: #274bdb;
   --footer-color: #2f384c;
-  --light-grey-color: #rgba(255, 255, 255, 0.6);
+  --light-grey-color: rgba(255, 255, 255, 0.6);
 }
 
 *,
@@ -22,4 +22,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--gradient-start-color);
+  background: linear-gradient(180deg, var(--gradient-start-color) 0%, var(--gradient-end-color) 100%);
 }
