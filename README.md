@@ -1,33 +1,30 @@
 # Frontend Test for new engineers
-## Purpose
-This test is designed to allow the candidate to demonstrate their familiarity with Vue 3 (or other similar SPA frameworks), full-stack capability and problem-solving skills.
+## Introduction
+This test is designed to allow you to demonstrate your familiarity with Vue 3 (or other similar SPA framework). It should take you between 2 and 3 hours to complete it. We don’t expect you to spend much more than that and we also don’t expect a pixel perfect work.
+
+*(If you find yourself wasting too much time, focus more on the functionality and less on the layouts).*
 ## How you will be assessed
 - Tasks are completed to the best of your ability
 - Code structure and quality
 - Code scalability and performance considerations
-- Clear instructions on how to run the application
+- Ability to handle API calls
+- Ability to create a working feature based on designs
 - Suggest any future improvements you would make if you had unlimited time
 
 ## The Test
-- Make a screen that will:
-    - Call the endpoint (https://o59ee.wiremockapi.cloud/notifications)
-    - List notifications from API response (should be able to scroll)
-    - Show a small dot (left hand-side) to indicate “unread” notifications
+- Use the endpoint (https://o59ee.wiremockapi.cloud/notifications) to load a list of notifications
+- Create a scrollable screen (see design below) to display those notifications
+- For each notification:
     - Show an avatar icon with initials and a random solid color
-- Upon clicking on a specific notification:
-    - Load a details screen with the full notification text
-    - Allow user to go back to main list view
-    - Show footer buttons according to the `available_actions` field returned in the API
-    - Buttons should make a POST the following endpoints when clicked (make sure to handle the HTTP responses accordingly):
-        - IGNORE: Call endpoint https://o59ee.wiremockapi.cloud/notifications/ignore passing body: `{ "id": ${notification id} }`
-        - CREATE ACTION: Call endpoint https://o59ee.wiremockapi.cloud/notifications/action passing body: `{ "id": ${notification id}, "action": "TODO" }`
-        - DELETE: Call endpoint https://o59ee.wiremockapi.cloud/notifications/delete passing body: `{ "id": ${notification id} }`
-### Screen references:
+    - Show a small dot (left hand-side) to indicate “unread” notifications (OPTIONAL)
+- When clicking on a specific notification, check that the action `CREATE TODO` is available under the `available_actions` property of that notification.
+    - If this action is available, call the endpoint: https://o59ee.wiremockapi.cloud/notifications/action with the body: `{ "id": ${notification id}, "action": "TODO" }`
+    - If the `CREATE TODO` action is not available, call the endpoint https://o59ee.wiremockapi.cloud/notifications/ignore passing the notification ID.
+### Screen references (footer is visual only, no need to implement navigation):
 | Description | Image |
 |-------------|-------|
 | Home screen | <img width="403" alt="FrontendTestHome" src="https://github.com/asknicely/frontend-test-vue/assets/133603331/c755497b-e089-4da6-8666-8d9d2ede2694">|
 | Scroll demo | <img width="403" alt="FrontendTestGif" src="https://github.com/asknicely/frontend-test-vue/assets/133603331/43228391-9e61-4278-a7c0-b8b51d482048">|
-| Details screen |<img width="403" alt="FrontendTestDetails" src="https://github.com/asknicely/frontend-test-vue/assets/133603331/ffff13c8-77af-4618-90ab-8b15d7bd2f6d">|
 
 
 ### Color references:
@@ -44,11 +41,8 @@ This test is designed to allow the candidate to demonstrate their familiarity wi
 ## Guidelines
 ### You must
 - Have a full functional app that can run locally (i.e.: package.json, scripts to serve localhost, etc)
-- Use Vue, React or Angular (we use Vue at AskNicely)
+- Use Vue, React or Angular (our tech stack is Vue)
 - Submit in a new Github repository, and link to it in your email.
-
-### You may
-- Use a framework like NextJS or Nuxt
 
 ---
 # How to run this project
