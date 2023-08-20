@@ -37,7 +37,7 @@ This test is designed to allow you to demonstrate your familiarity with Vue 3 (o
 ## Bonus
 - Include unit or component tests
 - Use Typescript
-- Show API errors
+- Handle API errors
 ## Guidelines
 ### You must
 - Have a full functional app that can run locally (i.e.: package.json, scripts to serve localhost, etc)
