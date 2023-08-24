@@ -30,7 +30,7 @@ This test is designed to allow you to demonstrate your familiarity with Vue 3 (o
 ### Color references:
 - Background gradient: `#6b097a` to `#274bdb`
 - Footer: `#2f384c`
-- Name and time labels: `#rgba(255, 255, 255, 0.6)`
+- Name and time labels: `rgba(255, 255, 255, 0.6)`
 - Avatar circle: random colors
 
 **Note**: *We don’t expect a pixel perfect design, but something close to the screenshots above.*
